@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram-like Web Page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Instagram Feed Bootstrap</title>
+
+</head>
+
+<body>
+
+
+    <div class="container-fluid">
+        <!-- Navbar -->
+        <nav class="navbar navbar-light bg-light">
+
+            <!-- Imagen and site name -->
+            <a class="navbar-brand" href="#">
+                <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="" width="30" height="26"
+                class="d-inline-block align-text-top">
+                Instagram
+            </a>
+
+            <!-- Buttons to the left -->
+            <div class="d-flex justify-content-end">
+
+               <!-- Modal Button Create a new Post -->
+               <button type="button" class="btn btn-success " data-bs-toggle="modal" data-bs-target="#myModal">
+                Create new post
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                 <!-- Modal header -->
+                 <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLabel">Create a new post</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <!-- Caption and text spaces -->
+                    <h5>Caption:</h5>
+                    <textarea class="form-control" id="exampleFormControlTextarea1"
+                    placeholder="Add the caption of your post here" rows="2"></textarea>
+
+                    <!-- Camera button image -->
+                    <button type="button" class="btn btn-light m-2  btn-sm">
+                        <img src="https://cdn-icons-png.flaticon.com/512/45/45010.png" alt="Cámara"
+                        width="25" height="25" class="me-2">
+                    </button>
+                    <!-- Botón con imagen de punto de ubicación -->
+                    <button type="button" class="btn btn-light btn-sm">
+                        <img src="https://icones.pro/wp-content/uploads/2021/02/icone-de-broche-de-localisation-noire.png"
+                        alt="Cámara" width="35" height="26" class="me-2">
+                    </button>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Dropdown Button -->
+    <div class="btn-group">
+        <button type="button" class="btn btn-secondary dropdown-toggle ms-2" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        <i class="fa-solid fa-gear" style="color: #ffffff;"></i>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end">
+        <li><button class="dropdown-item" type="button">Profile</button></li>
+        <li><button class="dropdown-item" type="button">Accesibility</button></li>
+        <li><button class="dropdown-item" type="button">Privacy and Data</button></li>
+        <li>
+            <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item text-danger href=" #">Log out</a></li>
+    </ul>
+</div>
+</div>
+</nav>
+</div>
+
+
+
+
+<div class="row mt-4">
+  <div class="col-md-6" style="margin: 0 auto;">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#posts"><i class="fa-solid fa-table-cells"></i></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#photos"><i class="fas fa-camera"></i></a>
+    </li>
+</ul>
+<!-- Recent post -->
+<div class="tab-content mt-3">
+    <div id="posts" class="tab-pane fade show active">
+      <h3>Recent Posts</h3>
+      <div class="card mb-3">
+        <div>
+          <p style="text-align:right;padding: 0 20px;">1 / 5</p>
+        </div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Cenote_por_Gustavo_Gerdel.jpg" class="card-img-top" alt="Image 1">
+        <div class="card-body">
+          <h5 class="card-title">Breathtaking Experiences</h5>
+          <h6 class="card-title text-dark">667 Likes</h6>
+          <p class="card-text">Learning to dive is an incredible experience, and most divers never forget it.</p>
+       
+        </div>
+      </div>
+      <div class="card mb-3">
+        <div>
+          <p style="text-align:right;padding: 0 20px;">2 / 5</p>
+        </div>
+        <img src="https://cdn.shortpixel.ai/spai/q_lossy+w_720+to_webp+ret_img/https://openspacetrust.org/wp-content/uploads/2020/12/Top-of-the-world_POST.jpg" class="card-img-top" alt="Image 2">
+        <div class="card-body">
+          <h5 class="card-title">Mountains for the Mind</h5>
+          <h6 class="card-title text-dark">356 Likes</h6>
+          <p class="card-text">I wouldn't call myself a natural hiker or especially fit, but I have always loved nature and the outdoors so thought I'd give hiking a try, and I'm so glad I did!</p>
+          
+        </div>
+      </div>
+      <div class="card mb-3">
+        <div>
+          <p style="text-align:right;padding: 0 20px;">3 / 5</p>
+        </div>
+        <img src="https://cnnespanol.cnn.com/wp-content/uploads/2023/02/230224150601-02-body-best-beaches-world-tripadvisor-2023-grace-bay.jpg?quality=100&strip=info" class="card-img-top" alt="Image 3">
+        <div class="card-body">
+          <h5 class="card-title">Beautiful Colors</h5>
+          <h6 class="card-title text-dark">200 Likes</h6>
+          <p class="card-text">You would love this color contrasts</p>
+          
+        </div>
+      </div>
+      <div class="card mb-3">
+        <div>
+          <p style="text-align:right;padding: 0 20px;">4 / 5</p>
+        </div>
+        <img src="https://img.theculturetrip.com/1440x807/smart/wp-content/uploads/2021/05/jcygft-1.jpg" class="card-img-top" alt="Image 4">
+        <div class="card-body">
+          <h5 class="card-title">The red-eyed tree frog</h5>
+          <h6 class="card-title text-dark">204 Likes</h6>
+          <p class="card-text">Is just one of several amazing creatures you can see in Costa Ric</p>
+          
+        </div>
+      </div>
+      <div class="card mb-3">
+        <div>
+          <p style="text-align:right;padding: 0 20px;">5 / 5</p>
+        </div>
+        <img src="https://www.betterup.com/hubfs/Best-Friends-In-The-City.jpg" class="card-img-top" alt="Image 5">
+        <div class="card-body">
+          <h5 class="card-title">Why is friendship important?</h5>
+          <h6 class="card-title text-dark">500 Likes</h6>
+          <p class="card-text">Friendship is important because it helps us build connections with people who share our values or interests.</p>
+         
+    <!-- Recent photos grid screen -->
+</div>
+</div>
+</div>
+<div id="photos" class="tab-pane fade">
+  <h3>Recent Photos</h3>
+  <div class="row">
+    <div class="col-md-4">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Cenote_por_Gustavo_Gerdel.jpg"  alt="Photo 1" width="250" height="150">
+  </div>
+  <div class="col-md-4">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg"  alt="Photo 2" width="250" height="150"">
+  </div>
+  <div class="col-md-4">
+      <img src="https://www.columbia.co.cr/wp-content/uploads/2022/07/playa-conchal-drone.jpg"  alt="Photo 3" width="250" height="150">
+  </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+      <img src="https://img.theculturetrip.com/1440x807/smart/wp-content/uploads/2021/05/jcygft-1.jpg"  alt="Photo 4" width="250" height="150">
+  </div>
+  <div class="col-md-4">
+      <img src="https://cdn.theatlantic.com/thumbor/x9Zp_HsNtwNLdE5HphObojZOR24=/0x0:4487x2524/976x549/media/img/mt/2022/12/RI_Hot_Summer_connected_archives_15/original.jpg"  alt="Photo 5" width="250" height="150">
+  </div>
+  <div class="col-md-4">
+      <img src="https://cdn.shortpixel.ai/spai/q_lossy+w_720+to_webp+ret_img/https://openspacetrust.org/wp-content/uploads/2020/12/Top-of-the-world_POST.jpg"  alt="Photo 6" width="250" height="150">
+  </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+      <img src="https://cnnespanol.cnn.com/wp-content/uploads/2023/02/230224150601-02-body-best-beaches-world-tripadvisor-2023-grace-bay.jpg?quality=100&strip=info"  alt="Photo 7" width="250" height="150">
+  </div>
+  <div class="col-md-4">
+      <img src="https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"  alt="Photo 8" width="250" height="150">
+  </div>
+  <div class="col-md-4">
+      <img src="https://hips.hearstapps.com/clv.h-cdn.co/assets/18/02/4000x2229/gallery-1515470256-levi-guzman-268866.jpg?resize=1200:*" alt="Photo 9" width="250" height="150">
+  </div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+
+
+<script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+<!-- Bootstrap Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+crossorigin="anonymous"></script>
+<!-- Font Awesome icons -->
+<script src="https://kit.fontawesome.com/e2aad4d631.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
